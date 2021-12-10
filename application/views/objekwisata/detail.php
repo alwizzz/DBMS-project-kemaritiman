@@ -2,13 +2,16 @@
     <br>
     <a class="btn btn-secondary" href=<?= site_url($link); ?> role="button">Kembali ke <?= $title ?></a>
     <br></br>
-    <div class="card" style="width: 72rem;">
-        <div class="card-header">
-            <?= $query['Nama'] ?>
+    <div class="col">
+        <div class="row">
+            <div class="col-md-10 col-12">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><h3>Detail <?= $title; ?></h3></li>
+                    <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
+                    <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
+                    <li class="list-group-item"><b>Kegiatan Wisata:</b> <?= $query['KegiatanWisata']; ?></li>
+                </ul>
+            </div>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Kode: <?= $query['Kode']; ?></li>
-            <li class="list-group-item">Kegiatan Wisata: <?= $query['KegiatanWisata']; ?></li>
-        </ul>
     </div>
 </div>
