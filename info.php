@@ -1,1 +1,1 @@
-<?php phpinfo(); ?>
+<?php echo site_url(); phpinfo();  ?>
