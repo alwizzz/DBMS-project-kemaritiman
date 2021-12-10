@@ -1,5 +1,5 @@
 <div class="container">
-    <br></br>
+    <br>
     <a class="btn btn-secondary" href=<?= site_url($link); ?> role="button">Kembali ke <?= $title ?></a>
     <br></br>
     <div class="col">

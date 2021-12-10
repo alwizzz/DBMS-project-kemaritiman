@@ -8,7 +8,7 @@
         <th scope="col">#</th>
         <th scope="col">Nama</th>
         <th scope="col">Koordinat Astronomis</th>
-        <th scope="col">Suhu Permukaan</th>
+        <th scope="col">Suhu Permukaan (Celcius)</th>
         <th scope="col">Luas (km persegi)</th>
         <th scope="col">Kedalaman Rerata (m)</th>
         <th scope="col">Kedalaman Maks (m)</th>

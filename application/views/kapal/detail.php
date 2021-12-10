@@ -9,7 +9,7 @@
                     <li class="list-group-item"><h3>Detail <?= $title; ?></h3></li>
                     <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
                     <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
-                    <li class="list-group-item"><b>Kegiatan Wisata:</b> <?= $query['KegiatanWisata']; ?></li>
+                    <li class="list-group-item"><b>Jenis:</b> <?= $query['Jenis']; ?></li>
                 </ul>
             </div>
         </div>

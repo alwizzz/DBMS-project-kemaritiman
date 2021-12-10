@@ -14,14 +14,14 @@
         </tr>
     </thead>
     <tbody>
-        <?php $counter=1; foreach( $query as $obw ) :?>
+        <?php $counter=1; foreach( $query as $eks ) :?>
             <tr>
             <th scope="row"><?= $counter++ ?></th>
-            <td><?= $obw['Nama'] ?></td>
-            <td><?= $obw['Klasifikasi'] ?></td>
-            <td><?= $obw['UkuranRerata'] ?></td>
-            <td><?= $obw['TangkapanTahunan'] ?></td>
-            <td><a href=<?= site_url($link . '/' . $obw['Kode']);?> class="btn btn-success">Detail</a></td>
+            <td><?= $eks['Nama'] ?></td>
+            <td><?= $eks['Klasifikasi'] ?></td>
+            <td><?= $eks['UkuranRerata'] ?></td>
+            <td><?= $eks['TangkapanTahunan'] ?></td>
+            <td><a href=<?= site_url($link . '/' . $eks['Kode']);?> class="btn btn-success">Detail</a></td>
             </tr>
         <?php endforeach; ?>
     </tbody>
