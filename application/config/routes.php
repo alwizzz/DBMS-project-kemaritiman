@@ -52,4 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
 $route['objekwisata/(:any)'] = 'objekwisata/detail/$1';
+$route['laut/(:any)'] = 'laut/detail/$1';
+$route['ekstraktif/(:any)'] = 'ekstraktif/detail/$1';
+$route['gununglaut/(:any)/(:any)'] = 'gununglaut/detail/$1/$2';

@@ -12,3 +12,4 @@ class ObjekWisata_model extends CI_Model
         return $this->db->query('SELECT * FROM OBJEK_WISATA WHERE Kode=\'' . $code . '\'')->row_array();
     }
 }
+

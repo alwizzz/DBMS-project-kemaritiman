@@ -12,7 +12,7 @@ class ObjekWisata extends CI_Controller
     {
         $data['query'] = $this->ObjekWisata_model->getAll();
         $data['title'] = 'Objek Wisata';
-        $data['link'] = '/objekwisata';
+        $data['link'] = 'objekwisata';
         $this->load->view('templates/header', $data);
         $this->load->view('objekwisata/index', $data);
         $this->load->view('templates/footer');
