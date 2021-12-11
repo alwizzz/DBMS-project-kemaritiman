@@ -1,6 +1,5 @@
 <div class="container">
     <h1><?= $title ?></h1>
-    <h4>Lorem ipsum dolor sit amet</h4>
 
     <table class="table table-stripped table-hover">
     <thead>
