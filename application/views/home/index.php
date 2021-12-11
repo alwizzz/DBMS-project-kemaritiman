@@ -32,6 +32,7 @@
             <h4>Perikanan</h4>
                 <ul>
                     <li><a href=<?= site_url('ekstraktif'); ?>>Ekstraktif</a></li>
+                    <li><a href=<?= site_url('tempatpelelanganikan'); ?>>Tempat Pelelangan Ikan</a></li>
                     <li><a href=<?= site_url('aktivitaspenangkapanikan'); ?>>Aktivitas Penangkapan Ikan</a></li>
                 </ul>
             <h4>Penambangan Laut</h4>
@@ -40,7 +41,7 @@
                     <li><a href=<?= site_url('penambanganbawahlaut'); ?>>Penambangan Bawah Laut</a></li>
                 </ul>
             <h4>Wisata Laut</h4>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul>
                     <li><a href=<?= site_url('objekwisata'); ?>>Objek Wisata</a></li>
                     <li><a href=<?= site_url('tamanlaut'); ?>>Taman Laut</a></li>
                 </ul>
