@@ -7,7 +7,7 @@
         <tr>
         <th scope="col">#</th>
         <th scope="col">Nama</th>
-        <th scope="col">Luas (km persegi)</th>
+        <th scope="col">Luas (hektare)</th>
         <th scope="col">Koordinat Astronomis</th>
         <th scope="col">Letak Administratif</th>
         <th scope="col">Aksi</th>

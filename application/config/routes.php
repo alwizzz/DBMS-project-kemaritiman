@@ -74,3 +74,4 @@ $route['tamanlaut/(:any)'] = 'tamanlaut/detail/$1';
 $route['teluk/(:any)'] = 'teluk/detail/$1';
 $route['tempatpelelanganikan/(:any)'] = 'tempatpelelanganikan/detail/$1';
 $route['transportasilaut/(:any)'] = 'transportasilaut/detail/$1';
+$route['aktivitaspenangkapanikan/(:any)'] = 'aktivitaspenangkapanikan/detail/$1';

@@ -9,7 +9,7 @@
                     <li class="list-group-item"><h3>Detail <?= $title; ?></h3></li>
                     <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
                     <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
-                    <li class="list-group-item"><b>Luas:</b> <?= $query['Luas']; ?></li>
+                    <li class="list-group-item"><b>Luas:</b> <?= $query['Luas']; ?> hektare</li>
                     <li class="list-group-item"><b>Koordinat Astronomis:</b> <?= $query['KoordinatAstronomis']; ?></li>
                     <li class="list-group-item"><b>Letak Administratif:</b> <?= $query['JenisKK'] . ' ' . $query['LokasiKotaKab']; ?></li>
                     <?php if(isset($query['KodeObjekWisata'])) : ?>
