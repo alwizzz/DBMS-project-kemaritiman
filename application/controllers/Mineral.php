@@ -6,7 +6,7 @@ class Mineral extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Mineral_model');
-    }
+    } 
 
     public function index()
     {
@@ -26,6 +26,7 @@ class Mineral extends CI_Controller
         $data['title'] = 'Mineral';
         $data['query'] = $this->Mineral_model->getDetail($code);    
         $data['mn_laut'] = $this->Mineral_model->getLaut_MN($code);    
+        $data['n1_pbl'] = $this->Mineral_model->getPBL_N1($code);    
         $data['link'] = '/mineral';
 
         $this->load->view('templates/header', $data);

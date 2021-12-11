@@ -27,8 +27,20 @@
                             <?php endforeach; ?>    
                         </ul>
                     </li>
+                    <?php if( !array_key_exists("", $n1_tlk) ) : ?>
+                        <li class="list-group-item"><b>Terdapat Teluk:</b> Ya</li>
+                        <li class="list-group-item"><b>Teluk yang ada:</b>
+                            <ul>
+                                <?php foreach( $n1_tlk as $tlk ) : ?>
+                                    <li>Teluk <?= $tlk['NamaTeluk']; ?></li>
+                                <?php endforeach; ?>    
+                            </ul>
+                        </li>
+                    <?php else : ?>
+                        <li class="list-group-item"><b>Terdapat Teluk:</b> Tidak</li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</div> 

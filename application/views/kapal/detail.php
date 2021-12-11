@@ -10,6 +10,12 @@
                     <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
                     <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
                     <li class="list-group-item"><b>Jenis:</b> <?= $query['Jenis']; ?></li>
+                    <?php if( !is_null($oo_trans['KodeTrans']) ) : ?>
+                        <li class="list-group-item"><b>Digunakan oleh Transportasi Laut:</b> Ya</li>
+                        <li class="list-group-item"><b>Kode Transportasi Laut:</b> <?= $oo_trans['KodeTrans'] ?></li>
+                    <?php else : ?>
+                        <li class="list-group-item"><b>Digunakan oleh Transportasi Laut:</b> Tidak</li>
+                    <?php endif; ?>  
                 </ul>
             </div>
         </div>

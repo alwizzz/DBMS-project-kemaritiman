@@ -7,7 +7,7 @@ class Kapal extends CI_Controller
         parent::__construct();
         $this->load->model('Kapal_model');
     }
-
+ 
     public function index()
     {
         $data['query'] = $this->Kapal_model->getAll();
@@ -25,6 +25,7 @@ class Kapal extends CI_Controller
         }
         $data['title'] = 'Kapal';
         $data['query'] = $this->Kapal_model->getDetail($code);    
+        $data['oo_trans'] = $this->Kapal_model->getTransportasiLaut_OO($code);    
         $data['link'] = '/kapal';
 
         $this->load->view('templates/header', $data);

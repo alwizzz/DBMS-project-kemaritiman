@@ -18,8 +18,20 @@
                             <?php endforeach; ?>    
                         </ul>
                     </li>
+                    <?php if( !array_key_exists("", $n1_pbl) ) : ?>
+                        <li class="list-group-item"><b>Ditambang oleh Penambangan Bawah Laut:</b> Ya</li>
+                        <li class="list-group-item"><b>Kode Penambangan Bawah Laut:</b>
+                            <ul>
+                                <?php foreach( $n1_pbl as $pbl ) : ?>
+                                    <li><?= $pbl['KodePBL']; ?></li>
+                                <?php endforeach; ?>    
+                            </ul>
+                        </li>
+                    <?php else : ?>
+                        <li class="list-group-item"><b>Ditambang oleh Penambangan Bawah Laut:</b> Tidak</li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>
     </div>
-</div> 
+</div>  

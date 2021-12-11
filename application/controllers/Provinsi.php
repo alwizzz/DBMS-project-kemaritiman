@@ -17,7 +17,7 @@ class Provinsi extends CI_Controller
         $this->load->view('provinsi/index', $data);
         $this->load->view('templates/footer');
     }
-    
+     
     public function detail($code=false)
     {
         if( !$code){
@@ -26,6 +26,8 @@ class Provinsi extends CI_Controller
         $data['title'] = 'Provinsi';
         $data['query'] = $this->Provinsi_model->getDetail($code);    
         $data['mn_pulau'] = $this->Provinsi_model->getPulau_MN($code);    
+        $data['n1_kk'] = $this->Provinsi_model->getKotaKab_N1($code);    
+        $data['n1_tl'] = $this->Provinsi_model->getTamanLaut_N1($code);    
         $data['link'] = '/provinsi';
 
         $this->load->view('templates/header', $data);

@@ -17,7 +17,7 @@ class Pulau extends CI_Controller
         $this->load->view('pulau/index', $data);
         $this->load->view('templates/footer');
     }
-    
+     
     public function detail($code=false)
     {
         if( !$code){
@@ -26,6 +26,7 @@ class Pulau extends CI_Controller
         $data['title'] = 'Pulau';
         $data['query'] = $this->Pulau_model->getDetail($code);    
         $data['mn_prov'] = $this->Pulau_model->getProvinsi_MN($code);    
+        $data['n1_tlk'] = $this->Pulau_model->getTeluk_N1($code);    
         $data['link'] = '/pulau';
 
         $this->load->view('templates/header', $data);
