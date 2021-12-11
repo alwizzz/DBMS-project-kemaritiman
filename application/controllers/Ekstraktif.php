@@ -25,6 +25,7 @@ class Ekstraktif extends CI_Controller
         }
         $data['title'] = 'Ekstraktif';
         $data['query'] = $this->Ekstraktif_model->getDetail($code);    
+        $data['mn_laut'] = $this->Ekstraktif_model->getLaut_MN($code);    
         $data['link'] = '/ekstraktif';
 
         $this->load->view('templates/header', $data);

@@ -25,6 +25,7 @@ class AktivitasPenangkapanIkan extends CI_Controller
         }
         $data['title'] = 'Aktivitas Penangkapan Ikan';
         $data['query'] = $this->AktivitasPenangkapanIkan_model->getDetail($code);    
+        $data['mn_eks'] = $this->AktivitasPenangkapanIkan_model->getEkstraktif_MN($code);    
         $data['link'] = '/aktivitaspenangkapanikan';
 
         $this->load->view('templates/header', $data);

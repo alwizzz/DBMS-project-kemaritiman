@@ -25,6 +25,7 @@ class Pulau extends CI_Controller
         }
         $data['title'] = 'Pulau';
         $data['query'] = $this->Pulau_model->getDetail($code);    
+        $data['mn_prov'] = $this->Pulau_model->getProvinsi_MN($code);    
         $data['link'] = '/pulau';
 
         $this->load->view('templates/header', $data);

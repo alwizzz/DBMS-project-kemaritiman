@@ -25,6 +25,7 @@ class Provinsi extends CI_Controller
         }
         $data['title'] = 'Provinsi';
         $data['query'] = $this->Provinsi_model->getDetail($code);    
+        $data['mn_pulau'] = $this->Provinsi_model->getPulau_MN($code);    
         $data['link'] = '/provinsi';
 
         $this->load->view('templates/header', $data);

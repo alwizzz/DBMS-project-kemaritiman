@@ -9,8 +9,15 @@
                     <li class="list-group-item"><h3>Detail <?= $title; ?></h3></li>
                     <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
                     <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
+                    <li class="list-group-item"><b>Cakupan:</b>
+                        <ul>
+                            <?php foreach( $mn_pulau as $pulau ) : ?>
+                                <li>Pulau <?= $pulau['NamaPulau']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</div> 

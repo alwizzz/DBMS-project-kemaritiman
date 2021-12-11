@@ -12,6 +12,13 @@
                     <li class="list-group-item"><b>Klasifikasi:</b> <?= $query['Klasifikasi']; ?></li>
                     <li class="list-group-item"><b>Ukuran rerata:</b> <?= $query['UkuranRerata'] . " cm"; ?></li>
                     <li class="list-group-item"><b>Tangkapan Tahunan:</b> <?= $query['TangkapanTahunan'] . " ton"; ?></li>
+                    <li class="list-group-item"><b>Dapat ditemukan di:</b>
+                        <ul>
+                            <?php foreach( $mn_laut as $laut ) : ?>
+                                <li>Laut <?= $laut['NamaLaut']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -11,8 +11,15 @@
                     <li class="list-group-item"><b>Tanggal Mulai:</b> <?= $query['TanggalBerangkat']; ?></li>
                     <li class="list-group-item"><b>Tanggal Selesai:</b> <?= $query['TanggalPulang']; ?></li>
                     <li class="list-group-item"><b>Lokasi Penangkapan:</b> Laut <?= $query['NamaLaut']; ?></li>
+                    <li class="list-group-item"><b>Hewan yang ditangkap:</b>
+                        <ul>
+                            <?php foreach( $mn_eks as $eks ) : ?>
+                                <li><?= $eks['NamaEkstraktif']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</div> 

@@ -25,6 +25,8 @@ class Laut extends CI_Controller
         }
         $data['title'] = 'Laut';
         $data['query'] = $this->Laut_model->getDetail($code);    
+        $data['mn_eks'] = $this->Laut_model->getEkstraktif_MN($code);    
+        $data['mn_mrl'] = $this->Laut_model->getMineral_MN($code);    
         $data['link'] = 'laut';
 
         $this->load->view('templates/header', $data);

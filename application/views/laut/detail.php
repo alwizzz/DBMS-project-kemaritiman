@@ -22,6 +22,20 @@
                             <li>Batas Barat: <?= $query['BatasBarat']; ?></li>
                         </ul>
                     </li>
+                    <li class="list-group-item"><b>Hewan yang dapat ditemukan:</b>
+                        <ul>
+                            <?php foreach( $mn_eks as $eks ) : ?>
+                                <li><?= $eks['NamaEkstraktif']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
+                    <li class="list-group-item"><b>Mineral yang dapat ditemukan:</b>
+                        <ul>
+                            <?php foreach( $mn_mrl as $mrl ) : ?>
+                                <li><?= $mrl['NamaMineral']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

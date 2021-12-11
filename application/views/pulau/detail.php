@@ -20,6 +20,13 @@
                             <li>Batas Barat: <?= $query['BatasBarat']; ?></li>
                         </ul>
                     </li>
+                    <li class="list-group-item"><b>Cakupan:</b>
+                        <ul>
+                            <?php foreach( $mn_prov as $prov ) : ?>
+                                <li>Provinsi <?= $prov['NamaProvinsi']; ?></li>
+                            <?php endforeach; ?>    
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
