@@ -7,7 +7,7 @@ class ObjekWisata extends CI_Controller
         parent::__construct();
         $this->load->model('ObjekWisata_model');
     }
-
+ 
     public function index()
     {
         $data['query'] = $this->ObjekWisata_model->getAll();
@@ -25,6 +25,7 @@ class ObjekWisata extends CI_Controller
         }
         $data['title'] = 'Objek Wisata';
         $data['query'] = $this->ObjekWisata_model->getDetail($code);    
+        $data['adv'] = $this->ObjekWisata_model->getAdvancedQuery($code);    
         $data['link'] = '/objekwisata';
 
         $this->load->view('templates/header', $data);

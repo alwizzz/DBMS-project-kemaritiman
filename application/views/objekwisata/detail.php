@@ -10,6 +10,8 @@
                     <li class="list-group-item"><b>Nama:</b> <?= $query['Nama']; ?></li>
                     <li class="list-group-item"><b>Kode:</b> <?= $query['Kode']; ?></li>
                     <li class="list-group-item"><b>Kegiatan Wisata:</b> <?= $query['KegiatanWisata']; ?></li>
+                    <li class="list-group-item"><b>Jenis:</b> <?= $adv['Jenis']; ?></li>
+                    <li class="list-group-item"><b>Kode Destinasi:</b> <?= $adv['KodeDestinasi']; ?></li>
                 </ul>
             </div>
         </div>
